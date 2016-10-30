@@ -48,6 +48,9 @@ class ViewController: UIViewController {
         }
     }
     
+// in the original video there is no private keyword to define the function below, in swift 
+// Xcode8 will report error if no there's private keyword is labled    
+    
     private func performOperation(operation: (Double) -> Double) {
         if operandStack.count >= 1 {
             displayValue = operation(operandStack.removeLast())
